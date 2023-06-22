@@ -27,7 +27,7 @@ body {
     border-radius: 12px;
 }
 .image {
-    background-image: url(/images/image-product-desktop.jpg);
+    background-image: url(../images/image-product-desktop.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     flex: 1 0 50%;
@@ -90,7 +90,7 @@ body {
 
 @media screen and (max-width: 426px) {
     .image {
-        background-image: url(/images/image-product-mobile.jpg);
+        background-image: url(../images/image-product-mobile.jpg);
         flex-basis: 230px;
         border-radius: 12px 12px 0 0;
     }
