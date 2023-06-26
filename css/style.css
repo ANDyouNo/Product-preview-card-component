@@ -25,6 +25,7 @@ body {
     display: flex;
     background-color: var(--White);
     border-radius: 12px;
+    max-height: 500px;
 }
 .image {
     background-image: url(../images/image-product-desktop.jpg);
@@ -34,7 +35,6 @@ body {
     border-radius: 12px 0 0 12px;
 }
 .card-text {
-    height: 55vh;
     padding: 30px 40px;
     display: flex;
     flex-direction: column;
@@ -46,11 +46,13 @@ body {
     color: var(--Dark-grayish-blue);
     text-transform: uppercase;
     letter-spacing: 4px;
+    margin-bottom: 1em;
 }
 .name-of-product {
     font-family: Fraunces, serif;
     font-weight: 700;
     padding-right: 15px;
+    margin-bottom: 1em;
 }
 .description {
     font-style: var(--Font-size);
@@ -58,6 +60,7 @@ body {
     font-weight: 500;
     line-height: 1.7;
     color: var(--Dark-grayish-blue);
+    margin-bottom: 1em;
 }
 .last-price {
     font-family: Fraunces, serif;
@@ -76,6 +79,13 @@ body {
     background-color: var(--Dark-cyan);
     padding: 15px;
     border-radius: 10px;
+    border: none;
+    transition: 0.3s;
+}
+.add-to-button:hover {
+    background-color: var(--Very-dark-blue);
+    cursor: pointer;
+    transition: 0.3s;
 }
 .button-text {
     color: var(--White);
@@ -86,6 +96,7 @@ body {
 .prices {
     display: flex;
     align-items: center;
+    margin-bottom: 1em;
 }
 
 @media screen and (max-width: 426px) {
@@ -97,20 +108,29 @@ body {
     .card {
         margin: 1em;
         flex-direction: column;
+        max-height: 600px;
     }
     .container {
         display: flex;
         margin: auto;
         align-items: center;
+        height: 97vh;
     }
-    .card-text {
-        height:  55vh;
+    .prices {
+        margin-bottom: 0.5em;
+    }
+    .description {
+        margin-bottom: 0.5em;
     }
     .name-of-product {
         padding-right: 0;
+        margin-bottom: 0;
     }
     .card-text {
         padding: 30px 20px;
+    }
+    .type-of-product {
+        margin-bottom: 0.5em;
     }
 }
     
